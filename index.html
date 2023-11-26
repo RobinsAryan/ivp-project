@@ -162,6 +162,7 @@
     <!-- partial -->
     <script>
       const showResult = () => {
+        settimeout(()=>{
         document.getElementById("pop").style.display = "block";
         let val = document.getElementById("input1").value;
         let output = 0;
@@ -178,6 +179,7 @@
         }
         output = output.toFixed(2);
         document.getElementById("out").innerHTML = output;
+        },2000)
       };
     </script>
   </body>
